@@ -15,8 +15,8 @@ const Home = () => {
   return (
     <>
       <div className="flex min-h-screen justify-between flex-col items-start  pt-12  bg-[#202024]">
-        <div className="flex items-start flex-col px-6 w-full">
-          <div className="">
+        <div className="flex items-start flex-col  w-full">
+          <div className="px-6">
             <button className="border border-slate-600 rounded-md p-1 bg-transparent">
               <img
                 src={backIcon}
@@ -27,12 +27,12 @@ const Home = () => {
               />
             </button>
           </div>
-          <div className="pt-12 ">
+          <div className="pt-12 px-6 ">
             <h1 className="font-semibold text-3xl text-[#f1f1f1]">
               My reservations
             </h1>
           </div>
-          <div className=" py-4">
+          <div className="px-6 py-4">
             <p className="text-[#f1f1f1]">09-04-2012</p>
           </div>
           <HomePageTiles
