@@ -61,7 +61,7 @@ const BookReservation = () => {
   ];
   return (
     <>
-      <div className="flex min-h-screen flex-col items-start  pt-12  bg-[#202024] ">
+      <div className="flex min-h-screen flex-col items-start  pt-4  bg-[#202024] ">
         <div className="px-6 flex justify-between items-center w-full">
           <button
             className="border border-slate-600 rounded-md p-1 bg-transparent"
@@ -77,7 +77,7 @@ const BookReservation = () => {
           </button>
           <p className=" text-[#32beef] text-sm">Reservations (2/3)</p>
         </div>
-        <div className="pt-12 px-6">
+        <div className="pt-4 px-6">
           <h1 className="font-semibold text-3xl text-[#f1f1f1]">
             Date and time
           </h1>
@@ -130,7 +130,7 @@ const BookReservation = () => {
             className="w-full bg-[#32beef] gap-2 px-6 text-[#f1f1f1] text-xl rounded-none"
             onClick={naviagteTo}
           >
-            Pay and Confirm
+            Book now
           </button>
         </div>
       </div>
