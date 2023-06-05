@@ -60,6 +60,16 @@ const Home = () => {
               name={"Drying room"}
               time={"16:00 - 17:00"}
             />
+            <HomePageTiles
+              icon={dryer}
+              name={"Drying room"}
+              time={"16:00 - 17:00"}
+            />
+            <HomePageTiles
+              icon={dryer}
+              name={"Drying room"}
+              time={"16:00 - 17:00"}
+            />
           </div>
         </div>
         {/* <div className="bg-[#26262b] p-1 w-full ">
@@ -84,8 +94,7 @@ const Home = () => {
         </div> */}
 
         <button
-          style={{ top: "90%" }}
-          className="flex w-full items-center bg-[#32beef] gap-2 px-6 text-[#f1f1f1] text-xl rounded-none fixed"
+          className="flex w-full items-center bg-[#32beef] gap-2 px-6 text-[#f1f1f1] text-xl rounded-none fixed bottom-0"
           onClick={navigateTo}
         >
           <img src={plusIcon} alt="Make a reservation" width={42} height={42} />
