@@ -113,7 +113,7 @@ const BookReservation = () => {
             Select time(s)
           </p>
         </div>
-        <div className=" overflow-y-auto flex flex-col gap-2 h-80 w-full">
+        <div className=" overflow-y-auto flex flex-col gap-2 h-80 w-full pb-20">
           {time.map((item, key) => (
             <>
               <BookReservationTimeTiles
