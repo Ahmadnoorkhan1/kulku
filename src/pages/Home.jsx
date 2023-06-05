@@ -14,8 +14,8 @@ const Home = () => {
   };
   return (
     <>
-      <div className="flex min-h-screen justify-between flex-col items-start  pt-12  bg-[#202024]">
-        <div className="flex items-start flex-col  w-full">
+      <div className="flex min-h-screen justify-between flex-col items-start  pt-4  bg-[#202024]">
+        <div className="flex items-start flex-col  w-full ">
           <div className="px-6">
             <button className="border border-slate-600 rounded-md p-1 bg-transparent">
               <img
@@ -27,32 +27,40 @@ const Home = () => {
               />
             </button>
           </div>
-          <div className="pt-12 px-6 ">
+          <div className="pt-8 px-6 ">
             <h1 className="font-semibold text-3xl text-[#f1f1f1]">
               My reservations
             </h1>
           </div>
-          <div className="px-6 py-4">
-            <p className="text-[#f1f1f1]">09-04-2012</p>
+          <div className=" pb-20 flex flex-col w-full items-start h-full overflow-y-scroll">
+            <div className="px-6 py-4">
+              <p className="text-[#f1f1f1]">09-04-2012</p>
+            </div>
+
+            <HomePageTiles
+              icon={suanaIcon}
+              name={"Suana"}
+              time={"16:00 - 17:00"}
+            />
+            <div className="px-6 py-4">
+              <p className="text-[#f1f1f1]">09-04-2012</p>
+            </div>
+            <HomePageTiles
+              icon={washerIcon}
+              name={"Laundry room"}
+              time={"15:00 - 16:00"}
+            />
+            <HomePageTiles
+              icon={dryer}
+              name={"Drying room"}
+              time={"16:00 - 17:00"}
+            />
+            <HomePageTiles
+              icon={dryer}
+              name={"Drying room"}
+              time={"16:00 - 17:00"}
+            />
           </div>
-          <HomePageTiles
-            icon={suanaIcon}
-            name={"Suana"}
-            time={"16:00 - 17:00"}
-          />
-          <div className="px-6 py-4">
-            <p className="text-[#f1f1f1]">09-04-2012</p>
-          </div>
-          <HomePageTiles
-            icon={washerIcon}
-            name={"Laundry room"}
-            time={"15:00 - 16:00"}
-          />
-          <HomePageTiles
-            icon={dryer}
-            name={"Drying room"}
-            time={"16:00 - 17:00"}
-          />
         </div>
         {/* <div className="bg-[#26262b] p-1 w-full ">
             <div className="border-l-4 border-slate-600 flex items-center justify-between ">
@@ -76,7 +84,8 @@ const Home = () => {
         </div> */}
 
         <button
-          className="flex w-full items-center bg-[#32beef] gap-2 px-6 text-[#f1f1f1] text-xl rounded-none"
+          style={{ top: "90%" }}
+          className="flex w-full items-center bg-[#32beef] gap-2 px-6 text-[#f1f1f1] text-xl rounded-none fixed"
           onClick={navigateTo}
         >
           <img src={plusIcon} alt="Make a reservation" width={42} height={42} />

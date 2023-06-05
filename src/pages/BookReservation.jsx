@@ -125,7 +125,7 @@ const BookReservation = () => {
             </>
           ))}
         </div>
-        <div className="flex w-full items-center">
+        <div className="flex w-full items-center fixed" style={{ top: "92%" }}>
           <button
             className="w-full bg-[#32beef] gap-2 px-6 text-[#f1f1f1] text-xl rounded-none"
             onClick={naviagteTo}
